@@ -1,0 +1,4 @@
+FROM python:3.11
+ADD . .
+RUN pip install requests fastmcp python-dotenv aiohttp openai
+CMD ["python", "./run-server.py"] 
